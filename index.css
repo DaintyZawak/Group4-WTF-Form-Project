@@ -3,46 +3,7 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
-    max-width: 1440px;
-    /* width: 100%;
- */
-
 }
-
-
-
-
-/* header > h1 {
-    font-size: 45px;
-    font-weight: bold;
-    color:#4f4f4f;
-    padding-bottom: 30px;
-}
-
-header > p {
-    font-size: 25px;
-    font-weight: 300;
-    color: #4f4f4f;
-    padding-bottom: 30px;
-}
-
-header {
-    margin-top: 150px;
-}
-
-form {
-    width: 400px;
-    width: 720px;
-    height: 900px;
-}
-
-.labelElements {
-    display: block;
-    padding-bottom: 20px;
-}
-
- */
-
 
 
 h1 {
@@ -166,7 +127,7 @@ background-color: #c9e6f3;
     flex-wrap: nowrap;
     position: relative;
     margin: auto;
-    background-image: url("./assets/4282077\ 1.png");
+    background-image: url("../assets/4282077\ 1.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -200,15 +161,8 @@ background-color: #c9e6f3;
 }
 
 .edgeDecoration1 > img {
-    /* object-position: right; */
-    /*top: 0;
-    left: 0; 
- */    /* margin-left: 579px; */
     width: 141px;
     height: 147px;
-    /* margin-top: 0;
-    padding-top: 0;
- */    
 }
 
 .edgedecoration2 {
@@ -221,8 +175,6 @@ background-color: #c9e6f3;
 }
 
 .edgeDecoration2> img {
-    /* top: 0;
-    left: 0; */
     width: 141px;
     height: 136px;
 
@@ -231,8 +183,6 @@ background-color: #c9e6f3;
 .modal {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.75);
-    /* width: 100%;
-    height: 100%; */
     top: 0;
     bottom: 0;
     left: 0;
@@ -291,4 +241,88 @@ h2 {
     display: flex;
     justify-content: flex-end;
     align-items: end;
+}
+
+
+@media only screen and (max-width: 480px) {
+   .formWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+   h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4f4f4f;
+    text-align: center;
+
+}
+
+.h1P {
+    font-size: 18px;
+    font-weight: 300;
+    color: #4f4f4f;
+    text-align: center;
+    margin: 15px;
+}
+
+   .labelElements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin: auto;
+    padding-top: 30px;
+
+}
+   .signUpOptions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    background-image: url("../assets/4282077\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#signUpButton {
+    width: 220px;
+    height: 34px;
+    background-color: #03A9F4;
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.signUpOptions > button {
+    width: 220px;
+    height: 34px; 
+    color: black;
+    border-radius: 15px;
+    border: none;
+    line-height: normal;
+    margin: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.formElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
 }
